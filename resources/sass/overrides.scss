@@ -1,0 +1,23 @@
+$enable-rounded: false;
+$enable-shadows: true;
+$font-family-sans-serif: "Open Sans";
+$font-size-base: .875rem;
+
+.content {
+	margin-top: -2rem;
+	padding-bottom: .5rem;
+}
+
+.footer {
+	background-color: #f5f5f5;
+}
+
+.footer > .container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.custom-select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}

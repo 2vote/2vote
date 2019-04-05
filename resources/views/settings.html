@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v3.8.5">
+	<title>Sticky Footer Navbar Template · Bootstrap</title>
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/">
+
+	<!-- Bootstrap core CSS -->
+	<link href="./css/app.css" rel="stylesheet">
+
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+	</style>
+</head>
+
+<body class="d-flex flex-column h-100">
+	<header>
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-expand-md navbar-dark">
+			<a class="navbar-brand" href="#">iVote <span class="subtitle">| IVAO VZW</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Admin
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Voters</a>
+							<a class="dropdown-item" href="#">Add meeting</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Settings</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" tabindex="-1">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="header">
+		<div class="container">
+			<div class="text-white">
+				<div class="media-body">
+					<h3 class="mb-1 text-white font-weight-normal text-center">Settings</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Begin page content -->
+	<main class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-8 offset-md-2 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+					<div class="card">
+						<div class="card-body">
+							<form>
+								<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="home-tab" data-toggle="tab" href="#settings-general" role="tab" aria-controls="home" aria-selected="true">General</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Meetings</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Topics</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Motions</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Groups</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Backup/Export</a>
+									</li>
+								</ul>
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="settings-general" role="tabpanel" aria-labelledby="home-tab">
+										<div class="container setting-container">
+											<div class="row">
+												<div class="col-md-6 setting-header">Application name</div>
+												<div class="col-md-6"><input type="text" class="form-control" id="organization-name" value="iVote"><small class="form-text text-muted">Specifies how the application is called.</small></div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 setting-header">Organization name</div>
+												<div class="col-md-6"><input type="text" class="form-control" id="organization-name" value="IVAO VZW"></div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 setting-header">Show 2vote name in footer</div>
+												<div class="col-md-6">
+													<div class="custom-control custom-switch">
+														<input type="checkbox" class="custom-control-input" id="customSwitch1">
+														<label class="custom-control-label" for="customSwitch1"> &nbsp;</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+										<div class="container setting-container">
+											<div class="row">
+												<div class="col-md-12">These are the default meeting settings. These can be overridden while creating a meeting and before a meeting is started.</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 setting-header">Default meeting group</div>
+												<div class="col-md-6">
+													<select class="custom-select custom-select-sm">
+														<option selected>General Assembly</option>
+														<option value="1">BoG</option>
+													</select></div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 setting-header">Show meeting on Meeting Schedule</div>
+												<div class="col-md-6">
+													<div class="custom-control custom-switch">
+														<input type="checkbox" class="custom-control-input" id="customSwitch1">
+														<label class="custom-control-label" for="customSwitch1"> &nbsp;</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer mt-auto py-3">
+		<div class="container">
+			<span class="text-muted text-right"><img src="https://ivao.aero/images/svg_logos/brand.svg" height="50"> <a href="about.html">2vote</a> | Released under the MIT License.</span>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
