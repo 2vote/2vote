@@ -24,7 +24,7 @@ class CreateMeetingsTable extends Migration
             $table->datetime('start')->nullable()->default(null);
             $table->datetime('end')->nullable()->default(null);
 
-            $table->unsignedBigInteger('chairman_by_id')->index();
+            $table->unsignedBigInteger('chairman_id')->index();
             $table->unsignedBigInteger('called_by_id')->index();
 
             $table->json('data')->nullable()->default(null);

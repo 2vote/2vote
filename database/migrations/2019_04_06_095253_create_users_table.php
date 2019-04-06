@@ -18,7 +18,9 @@ class CreateUsersTable extends Migration
 
             $table->string('name');
             $table->string('email')->nullable()->default(null);
-            $table->enum('access', ['member', 'boardmember', 'administrator']);
+            $table->boolean('is_member')->default(false);
+            $table->boolean('is_boardmember')->default(false);
+            $table->boolean('is_administrator')->default(false);
             $table->json('authentication')->nullable()->default(null);
 
             $table->timestamps();
