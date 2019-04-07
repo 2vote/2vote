@@ -1,4 +1,4 @@
-@extends('blade')
+@extends('base')
 
 @section('page_title')
 Dashboard

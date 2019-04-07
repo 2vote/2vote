@@ -68,6 +68,7 @@
 			<div class="text-white">
 				<div class="media-body">
 					<h3 class="mb-1 text-white font-weight-normal text-center">@yield('page_title', 'NO PAGE TITLE')</h3>
+					<small class="text-center">@yield('page_subtitle', '')</small>
 				</div>
 			</div>
 		</div>
